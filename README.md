@@ -1,4 +1,4 @@
-This will track the development and creation of at least one keyboard
+BThis will track the development and creation of at least one keyboard
 planned for personal use, but I want to share it with others.
 
 # Gameboard
@@ -59,7 +59,7 @@ of the model. I hope to reproduce this in my own work.
 Taking a few things from my experiments I created my own layout using the
 awesome [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/).  I
 started with the Ergodox layout and made some
-changes: [switch_plate_01.png](images/switch_plate_1_0.png)
+changes: [switch_plate_1_0.svg](images/switch_plate_1_0.svg)
 
 #### Changes from Ergodox
 
