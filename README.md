@@ -1,4 +1,4 @@
-BThis will track the development and creation of at least one keyboard
+This will track the development and creation of at least one keyboard
 planned for personal use, but I want to share it with others.
 
 # Gameboard
@@ -23,11 +23,56 @@ Here are a few of my wanted features:
 * NKRO support
 * Maybe support for a foot pedal
 
-## Changes from Ergodox
+## Layout
 
+I liked the base layout of the Ergodox, but I wanted to both make some
+modifications to it as well as look at what others have done.
+
+### Redox
+
+I liked the look of the
+[Redox](https://www.thingiverse.com/thing:2704567) that I found on
+Thingiverse. I also used the [tilted
+Redox](https://www.thingiverse.com/thing:2767216) that I found there
+as well. I knew these weren't the final layout, but I wanted to do
+some test prints as well as look at ideas from others. 
+
+#### What I learned from printing the Redox (tilted)
+
+I liked many of the changes from the original Ergodox, but I ran into
+one huge issue: keycaps. This layout uses a bunch of 1.25u keys (which
+I wish Ergodox had used as well), but I couldn't find a decent keycap
+set that would work with this layout. I think if you were building a
+Redox, you'd have to use a DSA profile set of keycaps from a standard
+keyboard. This probably isn't a big deal, but I really wanted
+something with different profiles by rows.
+
+I also felt that the tilt was too much for a gaming half-keyboard. In
+playing with my own layout later, I settled on a 7 degree tilt instead
+of the 15 degree from the Thingiverse model.
+
+I really liked the mounting screw design and filleted edge to the top
+of the model. I hope to reproduce this in my own work.
+
+### Design 1.0
+
+Taking a few things from my experiments I created my own layout using the
+awesome [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/).  I
+started with the Ergodox layout and made some
+changes: [switch_plate_01.png](images/switch_plate_1_0.png)
+
+#### Changes from Ergodox
+
+* Removed right hand
 * Removed thumb cluster
 * Changed the inside column to be 1.5u, 1u, 1u keys instead of 1u, 1.5u, 1.5u
   * I feel this provides a more natural reach for the keys
+
+#### Creating the model
+
+I used Tinkercad to extrude the .png and then spent a lot of time
+manipulating it to have some rounded corners and a tilted base.
+
 
 ## Microcontroller
 
