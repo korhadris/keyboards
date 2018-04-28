@@ -1,4 +1,4 @@
-BThis will track the development and creation of at least one keyboard
+This will track the development and creation of at least one keyboard
 planned for personal use, but I want to share it with others.
 
 # Gameboard
@@ -70,8 +70,10 @@ changes: [switch_plate_1_0.svg](images/switch_plate_1_0.svg)
 
 #### Creating the model
 
-I used Tinkercad to extrude the .png and then spent a lot of time
-manipulating it to have some rounded corners and a tilted base.
+I used Tinkercad to extrude the .png and then spent a lot of time manipulating
+it to have some rounded corners and a tilted base. The models that I ended up
+with are [switch_plate_1_0.stl](stl/switch_plate_1_0.stl) and
+[base_1_0.stl](stl/base_1_0.stl).
 
 
 ## Microcontroller
