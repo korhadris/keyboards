@@ -11,17 +11,18 @@ cluster and replacing it with a small gamepad joystick.
 
 ## Features
 
-Here are a few of my wanted features:
+Here are a few of my desired features:
 
 * More buttons than the G13
 * Better joystick
 * Mechanical keys
 * Customizable key bindings (firmware updates OK for this)
-* Mode switching
+* Mode switching (layers, profiles for different game types)
 * Red Cherry-compatible switches
 * Column stagger or ortholinear layout
 * NKRO support
 * Maybe support for a foot pedal
+* Fit on a 180x180 3D printer build plate
 
 ## Layout
 
@@ -54,12 +55,14 @@ of the 15 degree from the Thingiverse model.
 I really liked the mounting screw design and filleted edge to the top
 of the model. I hope to reproduce this in my own work.
 
-### Design 1.0
+### Design 0.1
 
-Taking a few things from my experiments I created my own layout using the
-awesome [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/).  I
-started with the Ergodox layout and made some
-changes: [switch_plate_1_0.svg](images/switch_plate_1_0.svg)
+(This isn't really the very initial design, as I've been thinking about this
+for over a year.)  Taking a few things from my experiments I created my own
+layout using the awesome [Keyboard Layout
+Editor](http://www.keyboard-layout-editor.com/).  I started with the Ergodox
+layout and made some changes:
+[switch_plate_0_1.svg](images/switch_plate_0_1.svg)
 
 #### Changes from Ergodox
 
@@ -72,9 +75,13 @@ changes: [switch_plate_1_0.svg](images/switch_plate_1_0.svg)
 
 I used Tinkercad to extrude the .png and then spent a lot of time manipulating
 it to have some rounded corners and a tilted base. The models that I ended up
-with are [switch_plate_1_0.stl](stl/switch_plate_1_0.stl) and
-[base_1_0.stl](stl/base_1_0.stl).
-
+with are [switch_plate_0_1.stl](stl/switch_plate_0_1.stl) and
+[base_0_1.stl](stl/base_0_1.stl). I left out the joystick portion as I was
+having enough difficulty with Tinkercad that I knew it would just be painful to
+keep iterating to get the joystick in the right place. The 1.0 plan was to be
+printed, and then use modeling clay to figure out where to place the SparkFun
+joystick breakout board to get the joystick in a comfortable postion and
+include that in the next version.
 
 ## Microcontroller
 
