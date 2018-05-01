@@ -3,7 +3,7 @@ planned for personal use, but I want to share it with others.
 
 # Gameboard
 
-I've really enjoyed my G13, but it is now no longer in production and
+I've really enjoyed my Logitech G13, but it is now no longer in production and
 replacements are expensive. I've long thought about making my own
 mechanical gameboard as an upgrade. My starting point is a left-half
 [Ergodox](https://www.ergodox.io). I will be removing the thumb
@@ -55,6 +55,8 @@ of the 15 degree from the Thingiverse model.
 I really liked the mounting screw design and filleted edge to the top
 of the model. I hope to reproduce this in my own work.
 
+![image](images/redox_01.jpg)
+
 ### Design 0.1
 
 (This isn't really the very initial design, as I've been thinking about this
@@ -62,7 +64,7 @@ for over a year.)  Taking a few things from my experiments I created my own
 layout using the awesome [Keyboard Layout
 Editor](http://www.keyboard-layout-editor.com/).  I started with the Ergodox
 layout and made some changes:
-[switch_plate_0_1.svg](images/switch_plate_0_1.svg)
+![switch_plate_0_1.svg](images/switch_plate_0_1.svg)
 
 #### Changes from Ergodox
 
@@ -83,6 +85,28 @@ printed, and then use modeling clay to figure out where to place the SparkFun
 joystick breakout board to get the joystick in a comfortable postion and
 include that in the next version.
 
+![image](images/keyboard_0_1.jpg)
+
+#### Post-print thoughts
+
+Merely extruding the shape from the keyboard layout editor resulted in the switches not snapping into place. The redox plate model has cutouts to allow the the clips on the switches to hold them in place. This will be included in the next design. I'm also going to move away from Tinkercad, so I won't attempt using modeling clay with this design. 
+
+### Design 0.2
+
+I switched from using Tinkercad to writing OpenSCAD script. I used it in previous projects and liked the control it gave me to accurately create shapes.
+
+#### OpenSCAD
+
+I started by creating a function to create the switch hole. Having the plate thickness as a variable allowed me to create the slot for the switch to properly snap into.
+
+The next function takes a list of key positions and sizes (based on the coordinates of the keyboard layout editor).
+
+Using the same coordinates for the switches I used two of my favorite commands in OpenSCAD: `hull` and `minkowski`. Each of these combine 3d solids to form new solids. This allowed me to create the plate that I then `difference` with the switch holes.
+
+After I had my script working, OpenSCAD allows me change variables and see the changes to my model. Changing these variables let me create a pleasing plate to use for my next design. [Switch plate 0.2](stl/switch_plate_0_2.stl)
+
+![plate_0_2](images/switch_plate_0_2.png)
+
 ## Microcontroller
 
 * I want a microcontroller that can be a keyboard and joystick, simultaneously
@@ -96,18 +120,26 @@ include that in the next version.
 
 ## Parts list
 
-* Red Cherry-MX (or compatible keyswitches)
-  * I purchased Gateron Reds
+* Cherry-MX (or compatible keyswitches)
+  * I purchased Gateron Reds for smooth gaming action.
 * Cherry-MX keycaps
   * I bought an Ergodox-based set so that I had the right number and profile of keys
-* Teensy LC microcontroller
+* Microcontroller
+  * [Teensy 3.2](https://www.pjrc.com/store/teensy32.html)
+  * [Teensy LC](https://www.pjrc.com/store/teensylc.html)
+  * [Arduino Pro Micro](https://www.sparkfun.com/products/12640)
 * Bunch of diodes
 * 3D printer with TBDxTBDxTBD build volume
+  * [Monoprice Maker Select](https://www.monoprice.com/product?p_id=13860)
 * Lots of PLA for test prints
+* [Thumb joystick](https://www.sparkfun.com/products/9032)
+  * [Breakout board](https://www.sparkfun.com/products/9110)
+  * Alternative [Slide joystick](https://www.sparkfun.com/products/9426)
+    * I like the size and low profile, but fear I will have issues with it slipping.
 * Thin wire (~24 gauge)
 
 
 # [Ergodox](https://www.ergodox.io)
 
 Depending on how the build process goes on my gameboard, I will have
-spare parts to start work on an Ergodox.
+spare parts to start work on an Ergodox. The alternative will be purchasing a Kinesis Advantage.
