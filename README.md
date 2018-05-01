@@ -64,6 +64,7 @@ for over a year.)  Taking a few things from my experiments I created my own
 layout using the awesome [Keyboard Layout
 Editor](http://www.keyboard-layout-editor.com/).  I started with the Ergodox
 layout and made some changes:
+
 ![switch_plate_0_1.svg](images/switch_plate_0_1.svg)
 
 #### Changes from Ergodox
