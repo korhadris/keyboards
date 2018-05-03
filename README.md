@@ -108,6 +108,10 @@ After I had my script working, OpenSCAD allows me change variables and see the c
 
 ![plate_0_2](images/switch_plate_0_2.png)
 
+When working on the base I had to update the version of OpenSCAD that I was using. I used the `rotate_extrude` command in OpenSCAD and versions prior to the 2016 versions do not include rotating a particular angle instead of the full 360 degres. I am currently using the March 2018 dev snapshot. [Base 0.2](stl/base_0_2.stl)
+
+![base_0_2](images/base_0_2.png)
+
 ## Microcontroller
 
 * I want a microcontroller that can be a keyboard and joystick, simultaneously
